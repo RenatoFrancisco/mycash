@@ -1,7 +1,7 @@
 package mycash.modelo;
 
 public class Cartao extends FormaPagamento {
-
+	
 	private Long id;
 
 	private BandeiraCartao bandeira;
