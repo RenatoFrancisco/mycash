@@ -1,5 +1,7 @@
 package mycash.modelo;
 
+import java.util.Collection;
+
 public class Conta {
 
 	private Long id;
@@ -11,6 +13,8 @@ public class Conta {
 	private Usuario titular;
 	
 	private Banco banco;
+	
+	private Collection<Cartao> cartoes;
 
 	public Long getId() {
 		return id;
@@ -50,5 +54,13 @@ public class Conta {
 	
 	public void setBanco(Banco banco) {
 		this.banco = banco;
+	}
+	
+	public Collection<Cartao> getCartoes() {
+		return cartoes;
+	}
+	
+	public void setCartoes(Collection<Cartao> cartoes) {
+		this.cartoes = cartoes;
 	}
 }
