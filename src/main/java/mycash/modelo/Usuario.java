@@ -1,5 +1,7 @@
 package mycash.modelo;
 
+import java.util.Collection;
+
 public class Usuario {
 	private Long id;
 
@@ -12,6 +14,8 @@ public class Usuario {
 	private boolean ativo;
 
 	private PerfilUser perfil;
+	
+	private Collection<Conta> contas;
 
 	public Long getId() {
 		return id;
