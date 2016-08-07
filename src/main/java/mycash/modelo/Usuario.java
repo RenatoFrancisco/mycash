@@ -14,7 +14,7 @@ public class Usuario {
 	private boolean ativo;
 
 	private PerfilUser perfil;
-	
+
 	private Collection<Conta> contas;
 
 	public Long getId() {
@@ -63,6 +63,14 @@ public class Usuario {
 
 	public void setPerfil(PerfilUser perfil) {
 		this.perfil = perfil;
+	}
+
+	public Collection<Conta> getContas() {
+		return contas;
+	}
+
+	public void setContas(Collection<Conta> contas) {
+		this.contas = contas;
 	}
 
 }

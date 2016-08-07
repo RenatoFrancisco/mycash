@@ -9,6 +9,8 @@ public class Conta {
 	private int numero;
 
 	private Usuario titular;
+	
+	private Banco banco;
 
 	public Long getId() {
 		return id;
@@ -41,5 +43,12 @@ public class Conta {
 	public void setTitular(Usuario titular) {
 		this.titular = titular;
 	}
-
+	
+	public Banco getBanco() {
+		return banco;
+	}
+	
+	public void setBanco(Banco banco) {
+		this.banco = banco;
+	}
 }
